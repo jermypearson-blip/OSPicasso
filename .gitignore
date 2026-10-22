@@ -1,0 +1,36 @@
+# Build Artifacts & Binaries
+*.o
+*.obj
+*.d
+*.bin
+*.elf
+*.iso
+*.img
+*.out
+*.map
+*.sym
+*.dump
+
+# Emulators & Debug Logs
+*.log
+qemu.log
+bochsout.txt
+serial.log
+core
+core.*
+
+# Editor & IDE Metadata
+.vscode/
+.vscode2_settings.json
+*.code-workspace
+*.swp
+*.swo
+*~
+*.bak
+*.tmp
+
+# OS Caches
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
