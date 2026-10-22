@@ -1,29 +1,18 @@
-// All Rights Reserved at Picasso Rayne Studios LLC 2026.
-
 #include "vga.h"
 
-void clear_screen() {
-    volatile char *screen = (volatile char *)0xB8000;
-    
-    for (int i = 0; i < 4000; i += 2) {
-        screen[i] = ' ';      // 🔤 Blank space character
-        screen[i + 1] = 0x07; // 🎨 Light grey text on black background
-    }
-}
+void kernel_main(void) {
+    terminal_initialize();
 
-void kernel_main() {
-    clear_screen();
-    volatile char *screen = (volatile char *)0xB8000;
-    const char *msg = "Hello";
-    int i = 0;
+    terminal_setcolor(0x1F); /* White text on Blue background */
+    terminal_writestring("================================================================================\n");
+    terminal_writestring("                        OSPicasso Kernel v0.2 Online                            \n");
+    terminal_writestring("================================================================================\n\n");
 
-    while (*msg != '\0') {
-        screen[i] = *msg;      // Write character 🔤
-        screen[i + 1] = 0x06;  // Write color 🎨
+    terminal_setcolor(0x0A); /* Light Green on Black */
+    terminal_writestring("[OK] Hardware I/O bus initialized (inb/outb).\n");
+    terminal_writestring("[OK] Modular VGA driver loaded.\n");
+    terminal_writestring("[OK] Hardware text cursor tracking active.\n\n");
 
-        msg++;                 // Next letter in "Hello"
-        i += 2;                // Jump past character + color in screen
-    }
-
-    while (1) {}               // Halt here
+    terminal_setcolor(0x0E); /* Yellow on Black */
+    terminal_writestring("Kernel initialized successfully. Ready for IDT and interrupts!\n");
 }
