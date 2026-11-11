@@ -1,0 +1,36 @@
+{
+  "$schema": "https://codeology.app/schemas/index.v1.json",
+  "version": 1,
+  "project": "OSPicasso",
+  "docs": [
+    {
+      "id": "doc_05af7190",
+      "kind": "module",
+      "title": "vga.c",
+      "filePath": "OSPicasso/vga.c",
+      "language": "cpp",
+      "summary": "building SO systems",
+      "tags": [
+        "systems"
+      ],
+      "path": "docs/OSPicasso/vga.c/_cell.md",
+      "lastUpdated": "2026-10-22T10:11:31Z"
+    },
+    {
+      "id": "doc_9c8de046",
+      "kind": "region",
+      "title": "vga.c › #include \"vga.h\"",
+      "filePath": "OSPicasso/vga.c",
+      "language": "cpp",
+      "summary": "Device config for my OS system",
+      "tags": [],
+      "path": "docs/OSPicasso/vga.c/regions/vga-c-include-vga-h.md",
+      "lineRange": {
+        "start": 1,
+        "end": 1
+      },
+      "sourceHash": "sha256:6e39fd0dec8743ea245c34f270a72b941500c3e613859846ac2b03bb2e38edd5",
+      "lastUpdated": "2026-10-22T10:07:14Z"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "$schema": "https://codeology.app/schemas/project.v1.json",
+  "name": "OSPicasso",
+  "description": "SO system",
+  "visibility": "private",
+  "createdAt": "2026-10-22T09:34:14Z"
+}
